@@ -1,7 +1,8 @@
 import { Request, Response } from 'express';
 import CreateUserService from '../services/CreateUserService';
+import IController from './IController';
 
-export default class CreateUserController {
+export default class CreateUserController implements IController {
 
     async handle(request: Request, response: Response) {
 
