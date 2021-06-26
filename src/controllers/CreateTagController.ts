@@ -12,8 +12,6 @@ export default class CreateTagController implements IController {
 
         const tag = await createTagService.execute({ name });
 
-        console.log(tag);
-
         return response.json(tag);
     }
 }
